@@ -28,8 +28,7 @@ include "header.php";
                         . "inner join item on useritem.itemID=item.itemID "
                         . "inner join category on item.categoryID=category.categoryID "
                         . "inner join location on useritem.locationID=location.locationID "
-                        . "inner join unit on unit.unitID=useritem.unitID where userId=".$_COOKIE['id']
-                        ." group by category.description";
+                        . "inner join unit on unit.unitID=useritem.unitID where userId=".$_COOKIE['id'];
                 echo "<table >";
                 echo "<tr class='table_header'>";
                 echo "<td>Name</td>";
